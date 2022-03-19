@@ -33,16 +33,19 @@ function helloWorld() {
 }
 
 // Arguments
+// a= 4
 function mulitpyByTwo(a) {
   const b = 2;
-  console.log(a * b);
+
+  // console.log(a * b);
+  return a * b;
 }
 
-2 + 2;
-2 - 2;
-2 * 2;
-2 / 2;
+let number = mulitpyByTwo(4) * 0.5;
+console.log(number);
 
-helloWorld();
+// Create a function which takes a number as an argument then multiply it with 2 then divide that number on 100 add 50 to it.
 
-mulitpyByTwo(2);
+// Create a function which return average of three numbers.
+
+// Create a function which returns the percentage of the argument.
