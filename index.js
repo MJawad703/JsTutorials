@@ -1,32 +1,48 @@
-// Non Primitives
-// 1- Arrays, 2- Objects and 3-Functions
+// Lecture 2
 
-// Arrays
-let firstArray = [1, 22, 43, 24, 15, 16];
+// Creating objects with new Object.
 
-// it is placed logically on any index
-// Location of the element in the array is called index
-let number = firstArray[3];
-console.log(firstArray);
+let person1 = "Suhaib";
+let person1Job = "Web dev";
+let person1Age = 25;
 
-// Objects
+let person2 = "israr";
+let person2Job = "Web dev";
+let person2Age = 25;
 
-let Person = {
-  name: "Israr",
-  class: "Web",
-  age: "25",
-  address: "Islamabad",
-  courses: ["Web", "SE", "DIT"],
-  friends: {
-    closeFriends: "ISRAR",
-    normalFriends: "None",
-  },
+let personOne = {
+  name: "Suhaib",
+  job: "Web dev",
+  age: 25,
 };
-// normal way to access properties
-console.log(Person.name);
-// another way to access object properties
-console.log(Person["name"]);
+// Objects literals
+//JSON => JS OBJECT NOTATION
 
-let statement = Person.name + " is living in " + Person.address;
+let personTwo = new Object();
+// personTwo is an EmptyObject
+personTwo.name = "Israr";
+personTwo.age = 25;
+personTwo.job = "Web dev";
 
-console.log(statement);
+// every thing in JS is treated like an Object.
+
+// NonPrimitives Functions
+
+function helloWorld() {
+  console.log("Hello");
+}
+
+// Arguments
+function mulitpyByTwo(a) {
+  const b = 2;
+  console.log(a * b);
+}
+
+2 + 2;
+2 - 2;
+2 * 2;
+2 / 2;
+
+helloWorld();
+
+mulitpyByTwo(2);
