@@ -1,51 +1,41 @@
-// Lecture 2
+// Loops and Conditions in JS
 
-// Creating objects with new Object.
+// Conditions
+// If and Switch statement
+// Based on a condition execute a block of code.
 
-let person1 = "Suhaib";
-let person1Job = "Web dev";
-let person1Age = 25;
-
-let person2 = "israr";
-let person2Job = "Web dev";
-let person2Age = 25;
-
-let personOne = {
-  name: "Suhaib",
-  job: "Web dev",
-  age: 25,
-};
-// Objects literals
-//JSON => JS OBJECT NOTATION
-
-let personTwo = new Object();
-// personTwo is an EmptyObject
-personTwo.name = "Israr";
-personTwo.age = 25;
-personTwo.job = "Web dev";
-
-// every thing in JS is treated like an Object.
-
-// NonPrimitives Functions
-
-function helloWorld() {
-  console.log("Hello");
+function logger(a) {
+  // KFC
+  // if(true){...} execute
+  // Bring burger from KFC ... if it is closed then bring from MCG if that is closed as well bring from mcdonalds.
+  if (a === "KFC") {
+    console.log("Burger from KFC");
+  } else if (a === "MCG") {
+    console.log("Burger from MCG");
+  } else {
+    console.log("Burger from McDonalds");
+  }
 }
 
-// Arguments
-// a= 4
-function mulitpyByTwo(a) {
-  const b = 2;
+logger("MCG");
 
-  // console.log(a * b);
-  return a * b;
-}
+// assignment operator =
+let a = "123";
+let b = a;
+// console.log(b);
 
-let number = mulitpyByTwo(4) * 0.5;
-console.log(number);
+// medium equality Comparision of Values "=="
+let medium = 123 == "123";
 
-// Create a function which takes a number as an argument then multiply it with 2 then divide that number on 100 add 50 to it.
+// Tight Checking "===" Strict Checking
+let strict = 123 === 123;
+// 123 => number
+// "123" => string
+// compare the values
+// Comparision of their types
 
-// Create a function which return average of three numbers.
+// console.log(strict);
 
-// Create a function which returns the percentage of the argument.
+// Assignment 2
+
+// Check for the parameter if its value is exact equal to 2 then multiply it with it self else if its value is exact equals to 10 divide it with it self. else add 20 to that parameter and substract 50 from it.
