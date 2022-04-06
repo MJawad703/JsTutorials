@@ -17,6 +17,10 @@ body {
   transition: 200ms ease;
 }
 
+.paragraph {
+  font-size: 35px;
+}
+
 .btn-group {
   display: flex;
   justify-content: space-around;
