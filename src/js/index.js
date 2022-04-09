@@ -1,14 +1,21 @@
-const box = document.getElementById("box");
-const btn = document.getElementById("btn");
-let isLogin = true;
+const add = document.getElementById("add");
+const reset = document.getElementById("reset");
+const dec = document.getElementById("dec");
+const counter = document.getElementById("counter");
 
-box.style.width = "100px";
-box.style.height = "100px";
-box.style.backgroundColor = "red";
-box.style.margin = "40px";
+add.addEventListener("click", () => {
+  localCounter = parseFloat(counter.innerText);
+  localCounter += 1;
+  counter.innerText = localCounter;
+});
 
-if (isLogin) {
-  box.style.display = "block";
-} else {
-  box.style.display = "none";
-}
+dec.addEventListener("click", () => {
+  localCounter = parseFloat(counter.innerText);
+  localCounter -= 1;
+  counter.innerText = localCounter;
+});
+
+reset.addEventListener("click", () => {
+  let initialState = 0;
+  counter.innerText = initialState;
+});
