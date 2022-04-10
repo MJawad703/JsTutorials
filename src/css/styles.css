@@ -10,8 +10,7 @@ body {
   background-color: teal;
 }
 .container {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
@@ -25,6 +24,7 @@ body {
 }
 
 .card-header {
+  border-radius: 5px;
   height: 60px;
   width: 100%;
   border: 4px solid #e4e4e4;
@@ -33,6 +33,7 @@ body {
   align-items: center;
 }
 .card-body {
+  border-radius: 5px;
   height: 400px;
   width: 100%;
   border: 4px solid #e4e4e4;
@@ -42,6 +43,7 @@ body {
 }
 .card-footer {
   height: 60px;
+  border-radius: 5px;
   width: 100%;
   border: 4px solid #e4e4e4;
   display: flex;
@@ -60,4 +62,14 @@ button {
 
 h1 {
   font-size: 100px;
+}
+
+.danger {
+  background-color: rgba(200, 0, 0, 0.8);
+  transition: 500ms;
+}
+
+.success {
+  background-color: rgba(0, 200, 0, 0.8);
+  transition: 500ms;
 }
