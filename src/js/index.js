@@ -1,33 +1,27 @@
-const add = document.getElementById("add");
-const reset = document.getElementById("reset");
-const dec = document.getElementById("dec");
-const counter = document.getElementById("counter");
-const body = document.getElementById("body");
+const button = document.getElementById("button");
+const input = document.getElementById("input");
+const display = document.getElementById("display");
 
-const checkClass = (number, element) => {
-  if (number >= 0) {
-    element.classList.add("success");
+button.addEventListener("click", (event) => {
+  console.log(event);
+});
+
+// const onChange = (e) => {
+//   if (e.target.value === "Jawad") {
+//     display.innerText = e.target.value;
+//   } else {
+//     alert("Wrong UserName");
+//     display.innerText = "";
+//   }
+// };
+
+input.addEventListener("change", (e) => {
+  if (e.target.value === "Jawad") {
+    display.innerText = e.target.value;
   } else {
-    element.classList.remove("success");
-    element.classList.add("danger");
+    alert("Wrong UserName");
+    display.innerText = "";
   }
-};
 
-add.addEventListener("click", () => {
-  localCounter = parseFloat(counter.innerText);
-  localCounter += 1;
-  counter.innerText = localCounter;
-  checkClass(localCounter, body);
-});
-
-dec.addEventListener("click", () => {
-  localCounter = parseFloat(counter.innerText);
-  localCounter -= 1;
-  counter.innerText = localCounter;
-  checkClass(localCounter, body);
-});
-
-reset.addEventListener("click", () => {
-  let initialState = 0;
-  counter.innerText = initialState;
+  // console.log(e.target.value);
 });
