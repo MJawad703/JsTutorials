@@ -1,27 +1,20 @@
-const button = document.getElementById("button");
-const input = document.getElementById("input");
-const display = document.getElementById("display");
+// DOMContentLoaded;
 
-button.addEventListener("click", (event) => {
-  console.log(event);
+window.addEventListener("DOMContentLoaded", () => {
+  const find = document.getElementById("find");
+  const replace = document.getElementById("replace");
+  const textarea = document.getElementById("textarea");
+  const button = document.getElementById("button");
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    const findValue = find.value;
+    const replaceValue = replace.value;
+    const textareaValue = textarea.value;
+    while (textareaValue.indexOf(findValue) != -1) {
+      textarea.value = textareaValue.replace(findValue, replaceValue);
+    }
+  });
 });
 
-// const onChange = (e) => {
-//   if (e.target.value === "Jawad") {
-//     display.innerText = e.target.value;
-//   } else {
-//     alert("Wrong UserName");
-//     display.innerText = "";
-//   }
-// };
-
-input.addEventListener("change", (e) => {
-  if (e.target.value === "Jawad") {
-    display.innerText = e.target.value;
-  } else {
-    alert("Wrong UserName");
-    display.innerText = "";
-  }
-
-  // console.log(e.target.value);
-});
+// let str = "I am Jawad";
+// console.log(str.indexOf("Jawad"));

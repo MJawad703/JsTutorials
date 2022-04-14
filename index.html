@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capturing Events in JS</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Search and Replace</title>
   </head>
   <body>
-    <h1>Capturing Events</h1>
-    <input type="text" id="input" placeholder="Please Enter your name" />
-    <h2 id="display"></h2>
-    <button id="button">Button</button>
+    <h1 class="heading">Search And Replace</h1>
+    <form action="#">
+      <div class="flex">
+        <input type="text" id="find" placeholder="find word" />
+        <input type="text" id="replace" placeholder="replace" />
+        <textarea id="textarea" cols="30" rows="10"></textarea>
+        <button id="button">Replace</button>
+      </div>
+    </form>
+    <script defer src="./src/js/index.js"></script>
   </body>
-  <script src="./src/js/index.js"></script>
 </html>
