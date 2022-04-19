@@ -1,20 +1,47 @@
-// Default exports
-import israr from "./functions.js";
+let array = [1, 2, 3, 4, 10, 182, 123, 123];
+let newArray = [...array, 4];
 
-function sum(a, b) {
-  return a + b;
-}
-israr();
-// Arrow Function
+let randomArray = [...array, ...newArray];
 
-const sumValue = (a, b) => a + b;
+const sumArray = [1, 2, 3];
 
-function multiplyByTwo(a) {
-  return a * 2;
-}
+const sum = (a, b, c) => {
+  return a + b + c;
+};
+console.log(sum(...sumArray));
 
-// Arrow Function
+const logger = (...elements) => {
+  console.log(...elements);
+};
 
-const arrowMultiplyByTwo = (a) => a * 2;
+logger(...randomArray);
 
-// Changes other than syntax
+let person = {
+  name: "Suhaib",
+  age: "25",
+  // 100000
+};
+
+let newObject = { ...person, profession: "Web Dev", skills: "JS" };
+// {
+//   name: "suhaib",
+//   age: 25,
+//   profession: "Web Dev"
+// }
+
+console.log(newObject);
+logger();
+
+const newObjectCreator = (obj, obj1) => {
+  return {
+    ...obj,
+    ...obj1,
+  };
+};
+
+const arr = [1, 2];
+const obj = { name: 1 };
+const newArrrr = [...arr, { ...obj }];
+
+const newObj = newObjectCreator(person, newObject);
+console.log(newArrrr);
