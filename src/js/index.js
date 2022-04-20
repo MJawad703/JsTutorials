@@ -1,47 +1,20 @@
-let array = [1, 2, 3, 4, 10, 182, 123, 123];
-let newArray = [...array, 4];
+// ecmaScript 6
+// arrow function
+// var let const
+// spread
+// destructuring
+// template literals
 
-let randomArray = [...array, ...newArray];
+// Old JavaScript
+function combineString(a, b, c, d) {
+  return "My Name is " + a + " and my age is " + b + "Marks" + c + d;
+}
 
-const sumArray = [1, 2, 3];
+// New JavaScript with Template Literals
+const combineStr = (a, b, c, d) =>
+  `My name is ${a} and my age is ${b}. My marks are ${c + d}`;
+//tab key on leftside
+// backticks
 
-const sum = (a, b, c) => {
-  return a + b + c;
-};
-console.log(sum(...sumArray));
-
-const logger = (...elements) => {
-  console.log(...elements);
-};
-
-logger(...randomArray);
-
-let person = {
-  name: "Suhaib",
-  age: "25",
-  // 100000
-};
-
-let newObject = { ...person, profession: "Web Dev", skills: "JS" };
-// {
-//   name: "suhaib",
-//   age: 25,
-//   profession: "Web Dev"
-// }
-
-console.log(newObject);
-logger();
-
-const newObjectCreator = (obj, obj1) => {
-  return {
-    ...obj,
-    ...obj1,
-  };
-};
-
-const arr = [1, 2];
-const obj = { name: 1 };
-const newArrrr = [...arr, { ...obj }];
-
-const newObj = newObjectCreator(person, newObject);
-console.log(newArrrr);
+console.log(combineString("Jawad", "27"));
+console.log(combineStr("Jawad", "27", 100, 50));
