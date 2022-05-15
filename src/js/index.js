@@ -1,20 +1,21 @@
-// ecmaScript 6
-// arrow function
-// var let const
-// spread
-// destructuring
-// template literals
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(array);
 
-// Old JavaScript
-function combineString(a, b, c, d) {
-  return "My Name is " + a + " and my age is " + b + "Marks" + c + d;
-}
+// callback functions, named function
+array.forEach(function (e, index) {
+  console.log(`This is value : ${e} and this is index ${index}`);
+});
+// event
+// Arrow version
+array.forEach((e, index) =>
+  console.log(`This is value of arrow : ${e} and this is index ${index}`)
+);
+// function nameSpace(name) {
+//   name();
+// }
 
-// New JavaScript with Template Literals
-const combineStr = (a, b, c, d) =>
-  `My name is ${a} and my age is ${b}. My marks are ${c + d}`;
-//tab key on leftside
-// backticks
+// nameSpace(function () {
+//   console.log("Name is Jawad");
+// });
 
-console.log(combineString("Jawad", "27"));
-console.log(combineStr("Jawad", "27", 100, 50));
+// higher order function
