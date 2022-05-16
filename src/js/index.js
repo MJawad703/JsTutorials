@@ -1,21 +1,33 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const array = [2, 3, 5, 1];
+
+// Push and Pop
+array.push("new element");
+console.log(array);
+array.pop();
 console.log(array);
 
-// callback functions, named function
-array.forEach(function (e, index) {
-  console.log(`This is value : ${e} and this is index ${index}`);
-});
-// event
-// Arrow version
-array.forEach((e, index) =>
-  console.log(`This is value of arrow : ${e} and this is index ${index}`)
-);
-// function nameSpace(name) {
-//   name();
-// }
+// includes
+console.log(array.includes(10));
 
-// nameSpace(function () {
-//   console.log("Name is Jawad");
-// });
+// indexOf
+console.log(array.indexOf(5));
 
-// higher order function
+// sort
+// array.sort();
+// console.log(array);
+
+// slice
+// console.log(array.slice(0, 3));
+
+// reverse
+console.log(array.reverse());
+
+// Map
+
+// Filter
+
+// Reduce
+
+// Some
+
+// Every
