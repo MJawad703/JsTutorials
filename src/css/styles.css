@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Source+Sans+Pro:ital,wght@0,200;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav {
+  background-color: rgb(180, 199, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.menu {
+  transition: cubic-bezier(0.17, 0.67, 0.78, 0.42);
+}
+.logo {
+  background-color: royalblue;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.menu ul {
+  list-style: none;
+  padding: 8px;
+  /* display: block !important; */
+}
+.menu ul li {
+  /* background-color: beige; */
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid transparent;
+  transition: 200ms;
+  color: white;
+  font-weight: bold;
+}
+
+.menu ul li:hover {
+  border-bottom: 4px solid royalblue;
+  cursor: pointer;
+}
+
+.active {
+}
+
+.hide-or-unhide {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgba(123, 123, 123, 0.5); */
+    /* padding: 10px; */
+  }
+  .logo {
+    /* align-self: flex-start; */
+  }
+  .hamburger {
+    /* align-self: center; */
+  }
+  .hamburger {
+    display: block;
+    /* align-self: flex-end;
+    margin-right: 20px; */
+  }
+  .menu {
+    width: 100%;
+    border-top: 1px solid blue;
+    margin-top: 10px;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+    /* margin-bottom: 10px; */
+    /* background-color: red; */
+  }
+}
