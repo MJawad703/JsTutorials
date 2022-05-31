@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=	, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Gallery</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="sm">
-          <div class="logo">R</div>
-          <div class="hamburger" id="toggle-btn">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-              <rect width="100" height="20"></rect>
-              <rect y="30" width="100" height="20"></rect>
-              <rect y="60" width="100" height="20"></rect>
-            </svg>
-          </div>
-        </div>
-        <div class="menu" id="menu">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Career</li>
-            <li>Contact us</li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <script src="./src/js/index.js" type="module" defer></script>
+    <h1>Image Gallery</h1>
+    <div class="container">
+      <div id="gallery"></div>
+    </div>
+    <div id="popup">
+      <img src="" alt="" id="selectedImage" />
+    </div>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
